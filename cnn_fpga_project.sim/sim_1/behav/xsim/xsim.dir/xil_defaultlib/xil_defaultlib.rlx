@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v,1773488675,verilog,,C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.gen/sources_1/bd/design_1/sim/design_1.v,,tb_top,,,,,,,,
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/conv2d.v,1773238932,verilog,,C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/conv_engine.v,,conv2d,,,,,,,,
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/conv_engine.v,1773246024,verilog,,C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/maxpool.v,,conv_engine,,,,,,,,
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/top.v,1773246024,verilog,,C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/weight_memory.v,,top,,,,,,,,
+C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sources_1/new/weight_memory.v,1773246024,verilog,,C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v,,weight_memory,,,,,,,,

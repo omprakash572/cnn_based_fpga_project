@@ -1,0 +1,5 @@
+Breakpoint File Version 1.0
+14,true,"C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v"
+17,true,"C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v"
+18,true,"C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v"
+23,true,"C:/Users/OMPRAKASH M/cnn_fpga_project/cnn_fpga_project.srcs/sim_1/new/tb_top.v"

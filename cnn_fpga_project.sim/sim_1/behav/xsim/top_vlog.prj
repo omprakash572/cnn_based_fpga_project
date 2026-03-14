@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../cnn_fpga_project.srcs/sources_1/new/conv_engine.v" \
+"../../../../cnn_fpga_project.srcs/sources_1/new/weight_memory.v" \
+"../../../../cnn_fpga_project.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

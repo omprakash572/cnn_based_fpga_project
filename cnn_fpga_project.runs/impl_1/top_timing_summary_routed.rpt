@@ -1,0 +1,629 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Mar 14 17:35:55 2026
+| Host         : DESKTOP-ABC4AMR running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a35t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (1)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (8)
+5. checking no_input_delay (8)
+6. checking no_output_delay (16)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (1)
+------------------------
+ There is 1 register/latch pin with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (8)
+------------------------------------------------
+ There are 8 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (8)
+------------------------------
+ There are 8 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (16)
+--------------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   24          inf        0.000                      0                   24           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            24 Endpoints
+Min Delay            24 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[14]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.868ns  (logic 3.960ns (44.660%)  route 4.907ns (55.340%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      0.434     0.434 r  ce/result_reg/P[14]
+                         net (fo=1, routed)           4.907     5.341    out_OBUF[14]
+    R8                   OBUF (Prop_obuf_I_O)         3.526     8.868 r  out_OBUF[14]_inst/O
+                         net (fo=0)                   0.000     8.868    out[14]
+    R8                                                                r  out[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.791ns  (logic 3.948ns (44.907%)  route 4.843ns (55.093%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     0.434 r  ce/result_reg/P[4]
+                         net (fo=1, routed)           4.843     5.277    out_OBUF[4]
+    U8                   OBUF (Prop_obuf_I_O)         3.514     8.791 r  out_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     8.791    out[4]
+    U8                                                                r  out[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[9]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.650ns  (logic 3.956ns (45.730%)  route 4.695ns (54.270%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[9])
+                                                      0.434     0.434 r  ce/result_reg/P[9]
+                         net (fo=1, routed)           4.695     5.129    out_OBUF[9]
+    T8                   OBUF (Prop_obuf_I_O)         3.522     8.650 r  out_OBUF[9]_inst/O
+                         net (fo=0)                   0.000     8.650    out[9]
+    T8                                                                r  out[9] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.411ns  (logic 3.945ns (46.907%)  route 4.466ns (53.093%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[12])
+                                                      0.434     0.434 r  ce/result_reg/P[12]
+                         net (fo=1, routed)           4.466     4.900    out_OBUF[12]
+    N4                   OBUF (Prop_obuf_I_O)         3.511     8.411 r  out_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     8.411    out[12]
+    N4                                                                r  out[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.174ns  (logic 3.946ns (48.279%)  route 4.228ns (51.721%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[11])
+                                                      0.434     0.434 r  ce/result_reg/P[11]
+                         net (fo=1, routed)           4.228     4.662    out_OBUF[11]
+    M4                   OBUF (Prop_obuf_I_O)         3.512     8.174 r  out_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     8.174    out[11]
+    M4                                                                r  out[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[13]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.011ns  (logic 3.955ns (49.376%)  route 4.055ns (50.624%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[13])
+                                                      0.434     0.434 r  ce/result_reg/P[13]
+                         net (fo=1, routed)           4.055     4.489    out_OBUF[13]
+    P4                   OBUF (Prop_obuf_I_O)         3.521     8.011 r  out_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     8.011    out[13]
+    P4                                                                r  out[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.967ns  (logic 3.973ns (49.866%)  route 3.994ns (50.134%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[15])
+                                                      0.434     0.434 r  ce/result_reg/P[15]
+                         net (fo=1, routed)           3.994     4.428    out_OBUF[15]
+    T4                   OBUF (Prop_obuf_I_O)         3.539     7.967 r  out_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.967    out[15]
+    T4                                                                r  out[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.567ns  (logic 3.950ns (52.199%)  route 3.617ns (47.801%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[10])
+                                                      0.434     0.434 r  ce/result_reg/P[10]
+                         net (fo=1, routed)           3.617     4.051    out_OBUF[10]
+    L4                   OBUF (Prop_obuf_I_O)         3.516     7.567 r  out_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     7.567    out[10]
+    L4                                                                r  out[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.895ns  (logic 3.964ns (57.498%)  route 2.930ns (42.502%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[7])
+                                                      0.434     0.434 r  ce/result_reg/P[7]
+                         net (fo=1, routed)           2.930     3.364    out_OBUF[7]
+    H4                   OBUF (Prop_obuf_I_O)         3.530     6.895 r  out_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     6.895    out[7]
+    H4                                                                r  out[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.882ns  (logic 3.962ns (57.579%)  route 2.919ns (42.421%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[8])
+                                                      0.434     0.434 r  ce/result_reg/P[8]
+                         net (fo=1, routed)           2.919     3.353    out_OBUF[8]
+    J4                   OBUF (Prop_obuf_I_O)         3.528     6.882 r  out_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     6.882    out[8]
+    J4                                                                r  out[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 pixel[5]
+                            (input port)
+  Destination:            ce/result_reg/B[5]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.891ns  (logic 0.258ns (29.006%)  route 0.632ns (70.994%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    D5                                                0.000     0.000 r  pixel[5] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[5]
+    D5                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  pixel_IBUF[5]_inst/O
+                         net (fo=1, routed)           0.632     0.891    ce/B[5]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[5]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[2]
+                            (input port)
+  Destination:            ce/result_reg/B[2]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.125ns  (logic 0.272ns (24.194%)  route 0.853ns (75.806%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    B6                                                0.000     0.000 r  pixel[2] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[2]
+    B6                   IBUF (Prop_ibuf_I_O)         0.272     0.272 r  pixel_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.853     1.125    ce/B[2]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[2]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[6]
+                            (input port)
+  Destination:            ce/result_reg/B[6]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.145ns  (logic 0.257ns (22.469%)  route 0.888ns (77.531%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C5                                                0.000     0.000 r  pixel[6] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[6]
+    C5                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  pixel_IBUF[6]_inst/O
+                         net (fo=1, routed)           0.888     1.145    ce/B[6]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[6]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[1]
+                            (input port)
+  Destination:            ce/result_reg/B[1]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.190ns  (logic 0.259ns (21.756%)  route 0.931ns (78.244%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    C6                                                0.000     0.000 r  pixel[1] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[1]
+    C6                   IBUF (Prop_ibuf_I_O)         0.259     0.259 r  pixel_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.931     1.190    ce/B[1]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[1]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[3]
+                            (input port)
+  Destination:            ce/result_reg/B[3]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.773ns  (logic 0.235ns (13.227%)  route 1.539ns (86.773%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    D10                                               0.000     0.000 r  pixel[3] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[3]
+    D10                  IBUF (Prop_ibuf_I_O)         0.235     0.235 r  pixel_IBUF[3]_inst/O
+                         net (fo=1, routed)           1.539     1.773    ce/B[3]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[3]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[7]
+                            (input port)
+  Destination:            ce/result_reg/B[7]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.952ns  (logic 0.307ns (15.724%)  route 1.645ns (84.276%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A10                                               0.000     0.000 r  pixel[7] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[7]
+    A10                  IBUF (Prop_ibuf_I_O)         0.307     0.307 r  pixel_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.645     1.952    ce/B[7]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[7]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel[4]
+                            (input port)
+  Destination:            ce/result_reg/B[4]
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.975ns  (logic 0.306ns (15.489%)  route 1.669ns (84.511%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A9                                                0.000     0.000 r  pixel[4] (IN)
+                         net (fo=0)                   0.000     0.000    pixel[4]
+    A9                   IBUF (Prop_ibuf_I_O)         0.306     0.306 r  pixel_IBUF[4]_inst/O
+                         net (fo=1, routed)           1.669     1.975    ce/B[4]
+    DSP48_X1Y30          DSP48E1                                      r  ce/result_reg/B[4]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.980ns  (logic 1.362ns (68.787%)  route 0.618ns (31.213%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[5])
+                                                      0.126     0.126 r  ce/result_reg/P[5]
+                         net (fo=1, routed)           0.618     0.744    out_OBUF[5]
+    F4                   OBUF (Prop_obuf_I_O)         1.236     1.980 r  out_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     1.980    out[5]
+    F4                                                                r  out[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.992ns  (logic 1.373ns (68.912%)  route 0.619ns (31.088%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      0.126     0.126 r  ce/result_reg/P[3]
+                         net (fo=1, routed)           0.619     0.745    out_OBUF[3]
+    D4                   OBUF (Prop_obuf_I_O)         1.247     1.992 r  out_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     1.992    out[3]
+    D4                                                                r  out[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ce/result_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.091ns  (logic 1.387ns (66.343%)  route 0.704ns (33.657%))
+  Logic Levels:           2  (DSP48E1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y30          DSP48E1                      0.000     0.000 r  ce/result_reg/CLK
+    DSP48_X1Y30          DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      0.126     0.126 r  ce/result_reg/P[0]
+                         net (fo=1, routed)           0.704     0.830    out_OBUF[0]
+    A4                   OBUF (Prop_obuf_I_O)         1.261     2.091 r  out_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.091    out[0]
+    A4                                                                r  out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
